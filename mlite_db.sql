@@ -570,7 +570,7 @@ CREATE TABLE IF NOT EXISTS `dokter` (
 --
 
 INSERT INTO `dokter` (`kd_dokter`, `nm_dokter`, `jk`, `tmp_lahir`, `tgl_lahir`, `gol_drh`, `agama`, `almt_tgl`, `no_telp`, `stts_nikah`, `kd_sps`, `alumni`, `no_ijn_praktek`, `status`) VALUES
-('DR001', 'dr. Ataaka Muhammad', 'L', 'Barabai', '2000-09-18', 'O', 'Islam', 'Barabai', '-', 'MENIKAH', 'UMUM', 'UI', '-', '1');
+('DR01', 'dr Indra Bambang Siswoyo', 'L', 'Medan', '1972-09-07', 'O', 'Islam', 'Medan', '-', 'MENIKAH', 'UMUM', 'UISU', '-', '1');
 
 -- --------------------------------------------------------
 
@@ -1837,23 +1837,23 @@ CREATE TABLE IF NOT EXISTS `mlite_settings` (
 
 INSERT INTO `mlite_settings` (`id`, `module`, `field`, `value`) VALUES
 (1, 'settings', 'logo', 'uploads/settings/logo.png'),
-(2, 'settings', 'nama_instansi', 'mLITE Indonesia'),
-(3, 'settings', 'alamat', 'Jl. Perintis Kemerdekaan 45'),
-(4, 'settings', 'kota', 'Barabai'),
-(5, 'settings', 'propinsi', 'Kalimantan Selatan'),
-(6, 'settings', 'nomor_telepon', '0812345678'),
-(7, 'settings', 'email', 'info@mlite.id'),
-(8, 'settings', 'website', 'https://mlite.id'),
-(9, 'settings', 'ppk_bpjs', '-'),
-(10, 'settings', 'footer', 'Copyright {?=date("Y")?} &copy; by drg. F. Basoro. All rights reserved.'),
+(2, 'settings', 'nama_instansi', 'UPT Puskesmas Pangkalan Brandan'),
+(3, 'settings', 'alamat', 'Jl. Sutomo no. 65 Kel. Brandan Timur Baru Kec. Babalan'),
+(4, 'settings', 'kota', 'Langkat'),
+(5, 'settings', 'propinsi', 'Sumatera Utara'),
+(6, 'settings', 'nomor_telepon', '085361536494'),
+(7, 'settings', 'email', 'pkmbrandan@gmail.com'),
+(8, 'settings', 'website', 'https://pkm-pangkalanbrandan.langkatkab.go.id/'),
+(9, 'settings', 'ppk_bpjs', '02031401'),
+(10, 'settings', 'footer', 'Copyright by drg. F. Basoro. All rights reserved.'),
 (11, 'settings', 'homepage', 'main'),
 (12, 'settings', 'wallpaper', 'uploads/settings/wallpaper.jpg'),
 (13, 'settings', 'text_color', '#44813e'),
 (14, 'settings', 'igd', '-'),
 (15, 'settings', 'laboratorium', '-'),
-(16, 'settings', 'pj_laboratorium', 'DR001'),
+(16, 'settings', 'pj_laboratorium', 'DR01'),
 (17, 'settings', 'radiologi', '-'),
-(18, 'settings', 'pj_radiologi', 'DR001'),
+(18, 'settings', 'pj_radiologi', 'DR01'),
 (19, 'settings', 'dokter_ralan_per_dokter', 'false'),
 (20, 'settings', 'cekstatusbayar', 'false'),
 (21, 'settings', 'ceklimit', 'false'),
@@ -2131,7 +2131,7 @@ CREATE TABLE IF NOT EXISTS `mlite_users` (
 
 INSERT INTO `mlite_users` (`id`, `username`, `fullname`, `description`, `password`, `avatar`, `email`, `role`, `cap`, `access`) VALUES
 (1, 'admin', 'Administrator', 'Admin ganteng baik hati, suka menabung dan tidak sombong.', '$2y$10$pgRnDiukCbiYVqsamMM3ROWViSRqbyCCL33N8.ykBKZx0dlplXe9i', 'avatar6422cb573b50c.png', 'info@mlite.id', 'admin', '', 'all'),
-(2, 'DR001', 'dr. Ataaka Muhammad', '-', '$2y$10$kuf2BxvViduBpUTn.6Nxsug3AskH/PGvXTSlfCfJqK8Ayb9a0.vqC', 'avatar643a104444515.png', 'info@mlite.id', 'admin', '', 'all');
+(2, 'DR01', 'dr Indra Bambang Siswoyo', '-', '$2y$10$kuf2BxvViduBpUTn.6Nxsug3AskH/PGvXTSlfCfJqK8Ayb9a0.vqC', 'avatar643a104444515.png', 'info@mlite.id', 'admin', '', 'all');
 
 -- --------------------------------------------------------
 
@@ -2480,7 +2480,7 @@ CREATE TABLE IF NOT EXISTS `pegawai` (
 --
 
 INSERT INTO `pegawai` (`id`, `nik`, `nama`, `jk`, `jbtn`, `jnj_jabatan`, `kode_kelompok`, `kode_resiko`, `kode_emergency`, `departemen`, `bidang`, `stts_wp`, `stts_kerja`, `npwp`, `pendidikan`, `gapok`, `tmp_lahir`, `tgl_lahir`, `alamat`, `kota`, `mulai_kerja`, `ms_kerja`, `indexins`, `bpd`, `rekening`, `stts_aktif`, `wajibmasuk`, `pengurang`, `indek`, `mulai_kontrak`, `cuti_diambil`, `dankes`, `photo`, `no_ktp`) VALUES
-(1, 'DR001', 'dr. Ataaka Muhammad', 'Pria', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', 0, 'Barabai', '2016-06-10', '-', 'Barabai', '2019-09-18', '<1', '-', '-', '-', 'AKTIF', 0, 0, 0, '2019-09-18', 1, 0, '-', '0');
+(1, 'DR01', 'dr Indra Bambang Siswoyo', 'Pria', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', 0, 'Barabai', '2016-06-10', '-', 'Barabai', '2019-09-18', '<1', '-', '-', '-', 'AKTIF', 0, 0, 0, '2019-09-18', 1, 0, '-', '0');
 
 -- --------------------------------------------------------
 
@@ -2846,7 +2846,7 @@ CREATE TABLE IF NOT EXISTS `petugas` (
 --
 
 INSERT INTO `petugas` (`nip`, `nama`, `jk`, `tmp_lahir`, `tgl_lahir`, `gol_darah`, `agama`, `stts_nikah`, `alamat`, `kd_jbtn`, `no_telp`, `status`) VALUES
-('DR001', 'dr. Ataaka Muhammad', 'L', 'Barabai', '2020-12-01', 'A', 'Islam', 'MENIKAH', '-', '-', '0', '1');
+('DR01', 'dr Indra Bambang Siswoyo', 'L', 'Medan', '2020-12-01', 'A', 'Islam', 'MENIKAH', '-', '-', '0', '1');
 
 -- --------------------------------------------------------
 
